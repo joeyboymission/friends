@@ -9,6 +9,11 @@
 
 # Ignore all environment files.
 /.env*
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
 
 # Ignore all logfiles and tempfiles.
 /log/*
@@ -32,3 +37,165 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+
+# === Additional Rails & Development Patterns ===
+
+# Database files
+*.sqlite3
+*.sqlite3-journal
+*.sqlite3-*
+db/*.sqlite3
+db/*.sqlite3-journal
+db/*.sqlite3-*
+
+# Ignore uploaded files in development
+/public/uploads
+
+# Ignore precompiled assets
+/public/packs
+/public/packs-test
+
+# Ignore yarn files
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity
+
+# Ignore node modules
+node_modules/
+npm-debug.log*
+
+# === IDE & Editor Files ===
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# RubyMine / IntelliJ
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# === OS Generated Files ===
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# === Ruby & Rails Specific ===
+
+# Ruby version managers
+.rvmrc
+.rbenv-version
+.ruby-version
+
+# Capistrano
+/config/deploy/*
+!/config/deploy.rb
+
+# RSpec
+spec/examples.txt
+
+# Coverage reports
+/coverage/
+coverage.json
+
+# Cucumber
+rerun.txt
+pickle-email-*.html
+
+# === Development & Testing ===
+
+# Local database config
+/config/database.yml.local
+
+# Test files
+/spec/tmp
+/features/tmp
+
+# Documentation
+/doc/
+/.yardoc
+
+# === Security & Credentials ===
+
+# Ignore application configuration
+/config/application.yml
+
+# Ignore figaro gem
+config/application.yml
+
+# Ignore credentials
+config/credentials.yml.enc
+config/credentials/
+
+# === Cache & Temp Files ===
+
+# Redis dump file
+dump.rdb
+
+# Elasticsearch
+elasticsearch-*
+
+# === Learning & Practice Specific ===
+
+# Practice notes and scratch files
+NOTES.md
+scratch.*
+practice.*
+TODO.md
+.practice/
+
+# Backup files
+*.bak
+*.backup
+
+# === Deployment ===
+
+# Kamal deployment
+.kamal/secrets*
+
+# Docker
+.dockerignore.local
+
+# === Misc ===
+
+# Ignore pow environment settings
+.powenv
+
+# Ignore Spring files
+/spring/*.pid
+
+# Ignore ByeBug command history
+.byebug_history
